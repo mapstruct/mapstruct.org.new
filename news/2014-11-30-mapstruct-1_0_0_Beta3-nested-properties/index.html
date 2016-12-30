@@ -4,21 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MapStruct 1.0.0.Beta3 is out with nested properties, qualifiers and more &ndash; MapStruct</title>
-        <link rel="stylesheet" href="/css/uikit.gradient.css" />
-        <link rel="stylesheet" href="/css/prettify.css" />
-        <link rel="stylesheet" href="/css/font-awesome.css" />
-        <link rel="stylesheet" href="/css/styles.css" />
-        <script src="/js/jquery-3.1.1.min.js"></script>
-        <script src="/js/uikit.min.js"></script>
-        <script src="/js/components/sticky.min.js"></script>
-        <script src="/js/components/switcher.min.js"></script>
-        <script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/uikit.gradient.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/prettify.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/styles.css" />
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/jquery-3.1.1.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/uikit.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/components/sticky.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/components/switcher.min.js"></script>
+        <script type="text/javascript" src="https://mapstruct.github.io/mapstruct.org.new/js/google-code-prettify/prettify.js"></script>
     </head>
 
     <body onload="prettyPrint()">
         
         <nav class="uk-navbar uk-margin-large-bottom uk-navbar-attached">
-            <a class="uk-navbar-brand uk-hidden-small" href="/">MapStruct</a>
+            <a class="uk-navbar-brand uk-hidden-small" href="https://mapstruct.github.io/mapstruct.org.new/">MapStruct</a>
             
             <ul class="uk-navbar-nav">
             
@@ -26,7 +26,7 @@
                 
                 
                     
-                        <a href="/news/">News</a>
+                        <a href="https://mapstruct.github.io/mapstruct.org.new/news/">News</a>
                     
                 
                 </li>
@@ -73,7 +73,7 @@
     <time>November 30, 2014</time>
 </p>
 
-<h1 class="uk-article-title"><a href="http://mapstruct.org/news/2014-11-30-mapstruct-1_0_0_Beta3-nested-properties/">MapStruct 1.0.0.Beta3 is out with nested properties, qualifiers and more</a></h1>
+<h1 class="uk-article-title"><a href="https://mapstruct.github.io/mapstruct.org.new/news/2014-11-30-mapstruct-1_0_0_Beta3-nested-properties/">MapStruct 1.0.0.Beta3 is out with nested properties, qualifiers and more</a></h1>
 
 <p class="uk-article-meta article-author">
     By <b>Gunnar Morling</b> under 
@@ -122,7 +122,7 @@ public interface CustomerMapper {
 
 <p>There is now built-in support for the Java 8 time and date types (JSR 310). That means properties of types such as <code>java.time.ZonedDateTime</code> or <code>java.time.LocalDateTime</code> will automatically be mapped to <code>String</code>s as well as the legacy date types <code>java.util.Calendar</code> and <code>java.util.Date</code>. Also <code>java.util.Calendar</code> will automatically mapped to <code>String</code> and <code>java.util.Date</code>.</p>
 
-<p>Refer to the <a href="/documentation/#section-05">documentation</a> for the list of all built-in mappings.</p>
+<p>Refer to the <a href="https://mapstruct.github.io/mapstruct.org.new/documentation/#section-05">documentation</a> for the list of all built-in mappings.</p>
 
 <p>Another improvement relates to the mapping of collection-typed properties. Let&rsquo;s assume the <code>Order</code> class from the previous example had a <code>List&lt;OrderLine&gt;</code> which should be mapped to a list of DTOs in the target object. So far you would have been required to declare a method such as the following on the mapper interface:</p>
 
@@ -194,7 +194,7 @@ public class OrderMapper {
 
 <h3 id="migration-notes">Migration notes</h3>
 
-<p>For the sake of increased consistency and better usability, we had to do some changes which may require existing applications which already use MapStruct to be adapted. Most prominently, <a href="/documentation/#section-10">reverse mapping methods</a> must now be explicitly marked as such using the new <code>@InheritInverseConfiguration</code> annotation:</p>
+<p>For the sake of increased consistency and better usability, we had to do some changes which may require existing applications which already use MapStruct to be adapted. Most prominently, <a href="https://mapstruct.github.io/mapstruct.org.new/documentation/#section-10">reverse mapping methods</a> must now be explicitly marked as such using the new <code>@InheritInverseConfiguration</code> annotation:</p>
 
 <pre class="prettyprint linenums">
 @Mapper(uses=DateMapper.class)
@@ -224,19 +224,19 @@ public class OrderMapper {
 
 <p>The Beta3 release is planned to be the last beta, next will be CR1 (candidate release).</p>
 
-<p>Anything you&rsquo;d like to propose for inclusion in the 1.0 Final release? Then let us know by commenting below or posting to the <a href="https://groups.google.com/forum/?fromgroups#!forum/mapstruct-users">mapstruct-users</a> group. Bugs and feature requests can be reported in the <a href="https://github.com/mapstruct/mapstruct/issues">issue tracker</a>. And if you&rsquo;d like to hack on MapStruct yourself, check out the <a href="/contributing">development guide</a>.</p>
+<p>Anything you&rsquo;d like to propose for inclusion in the 1.0 Final release? Then let us know by commenting below or posting to the <a href="https://groups.google.com/forum/?fromgroups#!forum/mapstruct-users">mapstruct-users</a> group. Bugs and feature requests can be reported in the <a href="https://github.com/mapstruct/mapstruct/issues">issue tracker</a>. And if you&rsquo;d like to hack on MapStruct yourself, check out the <a href="https://mapstruct.github.io/mapstruct.org.new/contributing">development guide</a>.</p>
 
             </div>
             <div>
                 <ul class="uk-pagination">
                     
                     <li>
-                        <a href="/news/2015-03-05-arrays-configuration-inheritance-mapstruct-1_0_0_Beta4/" title="Array mappings, configuration inheritance: MapStruct 1.0.0.Beta4 released"><i class="uk-icon-angle-double-left"></i></a>
+                        <a href="https://mapstruct.github.io/mapstruct.org.new/news/2015-03-05-arrays-configuration-inheritance-mapstruct-1_0_0_Beta4/" title="Array mappings, configuration inheritance: MapStruct 1.0.0.Beta4 released"><i class="uk-icon-angle-double-left"></i></a>
                     </li>
                     
                     
                     <li>
-                        <a href="/news/2014-07-02-Java_8_support_in_mapstruct-1_0_0_Beta2/" title="Support for Java 8, JodaTime and more: MapStruct 1.0.0.Beta2 released"><i class="uk-icon-angle-double-right"></i></a>
+                        <a href="https://mapstruct.github.io/mapstruct.org.new/news/2014-07-02-Java_8_support_in_mapstruct-1_0_0_Beta2/" title="Support for Java 8, JodaTime and more: MapStruct 1.0.0.Beta2 released"><i class="uk-icon-angle-double-right"></i></a>
                     </li>
                     
 
@@ -255,19 +255,19 @@ public class OrderMapper {
 </ul>
 <ul class="uk-nav uk-nav-sub">
     
-    <li><a href="http://mapstruct.org/news/2016-11-22-mapstruct-1_1_0_Final-seen-in-the-wild/">MapStruct 1.1.0.Final seen in the wild!</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-11-22-mapstruct-1_1_0_Final-seen-in-the-wild/">MapStruct 1.1.0.Final seen in the wild!</a></li>
     
-    <li><a href="http://mapstruct.org/news/2016-11-08-mapstruct-1_1_0_CR2-is-out/">MapStruct 1.1.0.CR2 is out</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-11-08-mapstruct-1_1_0_CR2-is-out/">MapStruct 1.1.0.CR2 is out</a></li>
     
-    <li><a href="http://mapstruct.org/news/2016-09-07-mapstruct-1_1_0_CR1/">MapStruct 1.1.0.CR1 released</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-09-07-mapstruct-1_1_0_CR1/">MapStruct 1.1.0.CR1 released</a></li>
     
-    <li><a href="http://mapstruct.org/news/2016-07-22-mapstruct-1_1_0_Beta2-released/">MapStruct 1.1.0.Beta2 released</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-07-22-mapstruct-1_1_0_Beta2-released/">MapStruct 1.1.0.Beta2 released</a></li>
     
-    <li><a href="http://mapstruct.org/news/2016-03-16-mapstruct-1_1_0_Beta1-released/">MapStruct 1.1.0.Beta1 released</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-03-16-mapstruct-1_1_0_Beta1-released/">MapStruct 1.1.0.Beta1 released</a></li>
     
-    <li><a href="http://mapstruct.org/news/2016-02-14-reference-guide-brushed-up/">Reference Guide brushed up and converted to AsciiDoc</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2016-02-14-reference-guide-brushed-up/">Reference Guide brushed up and converted to AsciiDoc</a></li>
     
-    <li><a href="http://mapstruct.org/news/2015-11-25-mapstruct-1_0_Final-released/">MapStruct 1.0 Final released</a></li>
+    <li><a href="https://mapstruct.github.io/mapstruct.org.new/news/2015-11-25-mapstruct-1_0_Final-released/">MapStruct 1.0 Final released</a></li>
     
 </ul>
 
