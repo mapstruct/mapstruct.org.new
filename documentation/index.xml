@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation-rss on MapStruct</title>
+    <link>https://mapstruct.github.io/mapstruct.org.new/documentation/index.xml</link>
+    <description>Recent content in Documentation-rss on MapStruct</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Feb 2016 16:11:58 +0530</lastBuildDate>
+    <atom:link href="https://mapstruct.github.io/mapstruct.org.new/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installation</title>
+      <link>https://mapstruct.github.io/mapstruct.org.new/documentation/installation/</link>
+      <pubDate>Sun, 14 Feb 2016 16:11:58 +0530</pubDate>
+      
+      <guid>https://mapstruct.github.io/mapstruct.org.new/documentation/installation/</guid>
+      <description>
+
+&lt;h2 id=&#34;distribution-bundle&#34;&gt;Distribution Bundle&lt;/h2&gt;
+
+&lt;p&gt;You can obtain a distribution bundle containing the MapStruct binaries, source code and API documentation from &lt;a href=&#34;http://sourceforge.net/projects/mapstruct/files/&#34;&gt;SourceForge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;maven&#34;&gt;Maven&lt;/h2&gt;
+
+&lt;p&gt;If you&amp;rsquo;re using Maven to build your project add the following to your &lt;em&gt;pom.xml&lt;/em&gt; to use MapStruct:&lt;/p&gt;
+
+&lt;pre class=&#34;prettyprint linenums lang-xml&#34;&gt;...
+&amp;lt;properties&amp;gt;
+    &amp;lt;org.mapstruct.version&amp;gt;1.1.0.Final&amp;lt;/org.mapstruct.version&amp;gt;
+&amp;lt;/properties&amp;gt;
+...
+&amp;lt;dependencies&amp;gt;
+    &amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.mapstruct&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;mapstruct&amp;lt;/artifactId&amp;gt; &amp;lt;!-- use mapstruct-jdk8 for Java 8 or higher --&amp;gt;
+        &amp;lt;version&amp;gt;${org.mapstruct.version}&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+&amp;lt;/dependencies&amp;gt;
+...
+&amp;lt;build&amp;gt;
+    &amp;lt;plugins&amp;gt;
+        &amp;lt;plugin&amp;gt;
+            &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;3.5.1&amp;lt;/version&amp;gt;
+            &amp;lt;configuration&amp;gt;
+                &amp;lt;source&amp;gt;1.6&amp;lt;/source&amp;gt; &amp;lt;!-- or higher, depending on your project --&amp;gt;
+                &amp;lt;target&amp;gt;1.6&amp;lt;/target&amp;gt; &amp;lt;!-- or higher, depending on your project --&amp;gt;
+                &amp;lt;annotationProcessorPaths&amp;gt;
+                    &amp;lt;path&amp;gt;
+                        &amp;lt;groupId&amp;gt;org.mapstruct&amp;lt;/groupId&amp;gt;
+                        &amp;lt;artifactId&amp;gt;mapstruct-processor&amp;lt;/artifactId&amp;gt;
+                        &amp;lt;version&amp;gt;${org.mapstruct.version}&amp;lt;/version&amp;gt;
+                    &amp;lt;/path&amp;gt;
+                &amp;lt;/annotationProcessorPaths&amp;gt;
+            &amp;lt;/configuration&amp;gt;
+        &amp;lt;/plugin&amp;gt;
+    &amp;lt;/plugins&amp;gt;
+&amp;lt;/build&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2 id=&#34;gradle&#34;&gt;Gradle&lt;/h2&gt;
+
+&lt;p&gt;With Gradle, you add something along the following lines to your &lt;em&gt;build.gradle&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&#34;prettyprint linenums lang-groovy&#34;&gt;plugins {
+    ...
+    id &amp;#39;net.ltgt.apt&amp;#39; version &amp;#39;0.8&amp;#39;
+}
+dependencies {
+    ...
+    compile &amp;#39;org.mapstruct:mapstruct:1.1.0.Final&amp;#39;
+
+    // OR use this with Java 8 and beyond
+    compile &amp;#39;org.mapstruct:mapstruct-jdk8:1.1.0.Final&amp;#39;
+
+    apt &amp;#39;org.mapstruct:mapstruct-processor:1.1.0.Final&amp;#39;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ant&#34;&gt;Ant&lt;/h2&gt;
+
+&lt;p&gt;tbd.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reference Guide</title>
+      <link>https://mapstruct.github.io/mapstruct.org.new/documentation/reference-guide/</link>
+      <pubDate>Sun, 14 Feb 2016 16:11:58 +0530</pubDate>
+      
+      <guid>https://mapstruct.github.io/mapstruct.org.new/documentation/reference-guide/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1.1.0.Final&lt;/strong&gt; (November 18th 2016)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reference guide: &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.1/reference/html/index.html&#34;&gt;HTML&lt;/a&gt; | &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.1/reference/pdf/mapstruct-reference-guide.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;API documentation: &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.1/api/index.html&#34;&gt;JavaDoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mapstruct/mapstruct/wiki/Migration-notes#110final&#34;&gt;Migration notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;1.0.0.Final&lt;/strong&gt; (November 25th 2015)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reference guide: &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.0/reference/html/index.html&#34;&gt;HTML&lt;/a&gt; | &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.0/reference/pdf/mapstruct-reference-guide.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;API documentation: &lt;a href=&#34;https://mapstruct.github.io/mapstruct.org.new/documentation/1.0/api/index.html&#34;&gt;JavaDoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mapstruct/mapstruct/wiki/Migration-notes#100final&#34;&gt;Migration notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Plug-in</title>
+      <link>https://mapstruct.github.io/mapstruct.org.new/documentation/eclipse-plugin/</link>
+      <pubDate>Sun, 14 Feb 2016 16:11:58 +0530</pubDate>
+      
+      <guid>https://mapstruct.github.io/mapstruct.org.new/documentation/eclipse-plugin/</guid>
+      <description>&lt;p&gt;Eclipse Plug-in&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

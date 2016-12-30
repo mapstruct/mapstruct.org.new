@@ -32,6 +32,11 @@
   </url>
   
   <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mapstruct.github.io/mapstruct.org.new/news/2016-02-14-reference-guide-brushed-up/</loc>
     <lastmod>2016-02-14T00:00:00+00:00</lastmod>
   </url>
@@ -89,6 +94,66 @@
   <url>
     <loc>https://mapstruct.github.io/mapstruct.org.new/news/2013-05-22-website-live/</loc>
     <lastmod>2013-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/contributing/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/community/getting-help/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/documentation/installation/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/community/other-resources/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/documentation/reference-guide/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/team/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/documentation/eclipse-plugin/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/technical-documentation/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/debugging/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/updating-mapstructorg/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/ide-build/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mapstruct.github.io/mapstruct.org.new/development/license/</loc>
+    <lastmod>2016-02-14T16:11:58+05:30</lastmod>
   </url>
   
 </urlset>
