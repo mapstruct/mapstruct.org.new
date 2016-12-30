@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MapStruct 1.1.0.CR1 released &ndash; MapStruct</title>
+        <link rel="stylesheet" href="/css/uikit.gradient.css" />
+        <link rel="stylesheet" href="/css/prettify.css" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/uikit.min.js"></script>
+        <script src="/js/components/sticky.min.js"></script>
+        <script src="/js/components/switcher.min.js"></script>
+        <script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+    </head>
+
+    <body onload="prettyPrint()">
+        
+        <nav class="uk-navbar uk-margin-large-bottom uk-navbar-attached">
+            <a class="uk-navbar-brand uk-hidden-small" href="/">MapStruct</a>
+            
+            <ul class="uk-navbar-nav">
+            
+                <li >
+                
+                
+                    
+                        <a href="/news/">News</a>
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                    
+                        
+                            <a href="https://github.com/mapstruct/mapstruct-examples">Documentation</a>
+                        
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                        <a href="">Community</a>
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                        <a href="">Development</a>
+                    
+                
+                </li>
+            
+            </ul>
+        </nav>
+
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+            
+<div class="uk-grid">
+    <div class="uk-width-medium-3-4 uk-push-1-4 main-contents">
+        <article>
+            <p class="uk-article-meta article-date">
+    <time>September 07, 2016</time>
+</p>
+
+<h1 class="uk-article-title"><a href="http://mapstruct.org/news/2016-09-07-mapstruct-1_1_0_CR1/">MapStruct 1.1.0.CR1 released</a></h1>
+
+<p class="uk-article-meta article-author">
+    By <b>Sjaak Derksen</b> under 
+    <span class="uk-badge">
+    
+        release
+    </span>
+    
+    <span class="uk-badge">
+    
+        news
+    </span>
+    
+</p>
+
+            <div>
+                <p>MapStruct 1.1.0.CR1 consolodates the functionality introduced in the preceeding MapStruct 1.1.0 Beta releases. A number of bugs were solved:</p>
+
+<ul>
+<li>Automatic generation of an iterable mapping methods where the property selection is based on a qualfier.</li>
+<li>Collection source getter null check to avoid NullPointExceptions.</li>
+<li>Missing imports for generic types in collections in generated methods.</li>
+<li>Removing redundant code from generated code when using nested source properties.</li>
+<li>Optimisation when using enum constant (using an enum constant instead of a String conversion).</li>
+<li>Fixing order for dependsOn.</li>
+<li>Fixing an issue introduced 1.1.0.Beta2 that causes problems for the @MappingTarget in combination with @InheritInverseConfiguration</li>
+</ul>
+
+<p></p>
+
+<p>The list of closed issues can be found in the <a href="https://github.com/mapstruct/mapstruct/issues?q=milestone%3A1.1.0.CR1">change log</a>.</p>
+
+<p>Also, the documentation is improved on our AccessorNamingStrategy Service Provider Interface. An example has been added <a href="https://github.com/mapstruct/mapstruct-examples">Examples repository</a> to support the documentation.</p>
+
+<p>Thanks to: <a href="https://github.com/tisoft">Markus Heberling</a>, and <a href="https://github.com/filiphr">Filip Hrisafov</a> for their contribution!</p>
+
+<h3 id="what-s-next">What&rsquo;s next?</h3>
+
+<p>Our intent is to release 1.1.0.Final in two weeks from now. We&rsquo;re having some small enhancements and bug fixes planned for that.</p>
+
+<h3 id="one-more-thing">One more thing</h3>
+
+<p>MapStruct has been nominated for an award in the category &ldquo;Most innovative contribution to the Java ecosystem&rdquo; on <a href="https://jaxlondon.com/jax-awards/">JAX London</a> &ndash; in case you&rsquo;d like to cast a vote for your favourite bean mapping generator.</p>
+
+<h3 id="download">Download</h3>
+
+<p>To fetch MapStruct 1.1.0.CR1 via Maven, Gradle or similar dependency management tools, use the following GAV coordinates:</p>
+
+<ul>
+<li><a href="http://search.maven.org/#artifactdetails|org.mapstruct|mapstruct|1.1.0.CR1|jar">org.mapstruct:mapstruct:1.1.0.CR1</a> for the annotation JAR (to be used with Java &lt;= 7) or <a href="http://search.maven.org/#artifactdetails|org.mapstruct|mapstruct-jdk8|1.1.0.CR1|jar">org.mapstruct:mapstruct-jdk8:1.1.0.CR1</a> (for usage with Java &gt;= 8)</li>
+<li><a href="http://search.maven.org/#artifactdetails|org.mapstruct|mapstruct-processor|1.1.0.CR1|jar">org.mapstruct:mapstruct-processor:1.1.0.CR1</a> for the annotation processor.</li>
+</ul>
+
+<p>Alternatively, you can download distribution bundles (ZIP, TAR.GZ) from <a href="http://sourceforge.net/projects/mapstruct/files/1.1.0.CR1/">SourceForge</a>.</p>
+
+<ul>
+<li>Get help at the <a href="https://groups.google.com/forum/?fromgroups#!forum/mapstruct-users">mapstruct-users</a> group or in our <a href="https://gitter.im/mapstruct/mapstruct-users">Gitter room</a></li>
+<li>Report bugs and feature requests via the <a href="https://github.com/mapstruct/mapstruct/issues">issue tracker</a></li>
+<li>Follow <a href="https://twitter.com/GetMapStruct">@GetMapStruct</a> on Twitter</li>
+<li>Follow MapStruct on <a href="https://plus.google.com/u/0/118070742567787866481/posts">Google+</a></li>
+</ul>
+            </div>
+            <div>
+                <ul class="uk-pagination">
+                    
+                    <li>
+                        <a href="/news/2016-11-08-mapstruct-1_1_0_CR2-is-out/" title="MapStruct 1.1.0.CR2 is out"><i class="uk-icon-angle-double-left"></i></a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="/news/2016-07-22-mapstruct-1_1_0_Beta2-released/" title="MapStruct 1.1.0.Beta2 released"><i class="uk-icon-angle-double-right"></i></a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+            <div>
+                
+            </div>
+        </article>
+    </div>
+
+    <div class="uk-width-medium-1-4 uk-pull-3-4">
+        <ul class="uk-nav uk-nav-side">
+    <li class="uk-nav-header">Latest News</li>
+</ul>
+<ul class="uk-nav uk-nav-sub">
+    
+    <li><a href="http://mapstruct.org/news/2016-11-22-mapstruct-1_1_0_Final-seen-in-the-wild/">MapStruct 1.1.0.Final seen in the wild!</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2016-11-08-mapstruct-1_1_0_CR2-is-out/">MapStruct 1.1.0.CR2 is out</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2016-09-07-mapstruct-1_1_0_CR1/">MapStruct 1.1.0.CR1 released</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2016-07-22-mapstruct-1_1_0_Beta2-released/">MapStruct 1.1.0.Beta2 released</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2016-03-16-mapstruct-1_1_0_Beta1-released/">MapStruct 1.1.0.Beta1 released</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2016-02-14-reference-guide-brushed-up/">Reference Guide brushed up and converted to AsciiDoc</a></li>
+    
+    <li><a href="http://mapstruct.org/news/2015-11-25-mapstruct-1_0_Final-released/">MapStruct 1.0 Final released</a></li>
+    
+</ul>
+
+    </div>
+</div>
+
+            <hr/>
+            <div>© Gunnar Morling 2016</div>
+        </div>
+    </body>
+</html>
