@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contributing &ndash; MapStruct</title>
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/uikit.gradient.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/prettify.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://mapstruct.github.io/mapstruct.org.new/css/styles.css" />
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/jquery-3.1.1.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/uikit.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/components/sticky.min.js"></script>
+        <script src="https://mapstruct.github.io/mapstruct.org.new/js/components/switcher.min.js"></script>
+        <script type="text/javascript" src="https://mapstruct.github.io/mapstruct.org.new/js/google-code-prettify/prettify.js"></script>
+    </head>
+
+    <body onload="prettyPrint()">
+        
+        <nav class="uk-navbar uk-margin-large-bottom uk-navbar-attached">
+            <a class="uk-navbar-brand uk-hidden-small" href="https://mapstruct.github.io/mapstruct.org.new/">MapStruct</a>
+            
+            <ul class="uk-navbar-nav">
+            
+                <li >
+                
+                
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                        <a href="https://mapstruct.github.io/mapstruct.org.new/news/">News</a>
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                    
+                        
+                            <a href="https://mapstruct.github.io/mapstruct.org.new/documentation/installation/">Documentation</a>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                </li>
+            
+                <li >
+                
+                
+                    
+                    
+                        
+                            <a href="https://mapstruct.github.io/mapstruct.org.new/community/getting-help/">Community</a>
+                        
+                    
+                        
+                    
+                
+                </li>
+            
+                <li class="uk-active">
+                
+                
+                    
+                    
+                        
+                            <a href="https://mapstruct.github.io/mapstruct.org.new/development/contributing/">Development</a>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                </li>
+            
+            </ul>
+        </nav>
+
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+            
+<div class="uk-grid">
+    <div class="uk-width-medium-3-4 uk-push-1-4 main-contents">
+        <h1>Contributing</h1>
+        <div><p>You love MapStruct but miss a certain feature? You found a bug and want to report it, or even better, fix it yourself? That&rsquo;s great! MapStruct is all open source and your help is highly appreciated.</p>
+
+<table class="uk-table">
+<thead>
+  <tr>
+    <th>What</th><th>Where</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="20%">Source code</td><td><a href="https://github.com/mapstruct/mapstruct">https://github.com/mapstruct/mapstruct</a></td>
+  </tr>
+  <tr>
+    <td width="20%">Issue tracker</td><td><a href="https://github.com/mapstruct/mapstruct/issues">https://github.com/mapstruct/mapstruct/issues</a></td>
+  </tr>
+  <tr>
+    <td width="20%">Discussions</td><td>Join the <a href="https://groups.google.com/forum/?fromgroups#!forum/mapstruct-users">mapstruct-users</a> Google group</td>
+  </tr>
+  <tr>
+    <td width="20%">CI build</td><td><a href="https://mapstruct.ci.cloudbees.com">https://mapstruct.ci.cloudbees.com</a></td>
+  </tr>
+  <tr>
+    <td width="20%">This web site</td><td><a href="https://github.com/mapstruct/mapstruct.org">https://github.com/mapstruct/mapstruct.org</a></td>
+  </tr>
+</tbody>
+</table>
+
+<p>MapStruct follows the <em>Fork &amp; Pull</em> development approach. To get started just fork the <a href="http://github.com/mapstruct/mapstruct">MapStruct repository</a> to your GitHub account and create a new topic branch for each change. Once you are done with your change, submit a <a href="https://help.github.com/articles/using-pull-requests">pull request</a> against the MapStruct repo.</p>
+
+<p>When doing changes, keep the following best practices in mind:</p>
+
+<ul>
+<li>Provide test cases</li>
+<li>Update the <a href="mapstruct.org/documentation">reference documentation</a> on <a href="mapstruct.org">mapstruct.org</a> where required</li>
+<li>Discuss new features you&rsquo;d like to implement at the <a href="https://groups.google.com/forum/?fromgroups#!forum/mapstruct-users">Google group</a> before getting started</li>
+<li>Create one pull request per feature</li>
+<li>Provide a meaningful history, e.g. squash intermediary commits before submitting a pull request</li>
+<li>Start your commit messages with &ldquo;#&lt;issue no&gt;&rdquo;, e.g. &ldquo;#123 Adding new mapping feature&rdquo;</li>
+<li>Have git automatically manage line endings as described <a href="https://help.github.com/articles/dealing-with-line-endings">here</a></li>
+<li>Format your sources using the provided IntelliJ <a href="https://github.com/mapstruct/mapstruct/blob/master/etc/mapstruct.xml">code style template</a>. Eclipse users can import the <a href="https://github.com/mapstruct/mapstruct/blob/master/etc/eclipse-formatter-config.xml">Eclipse code formatter settings</a> - it&rsquo;s close enough, but configure the Save Actions to only format edited lines. If you use another IDE stick to the used style as much as possible.</li>
+</ul>
+</div>
+    </div>
+    <div class="uk-width-medium-1-4 uk-pull-3-4">
+        <aside>
+    <div id="sidebar">
+        <ul class="uk-nav uk-nav-side">
+        
+        
+            
+        
+            
+        
+            
+                
+            
+        
+            
+                
+            
+        
+            
+                
+            <li class="uk-nav-header">Development</li>
+
+                    
+            <li class="uk-active">
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/contributing/"> Contributing </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/team/"> Team </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/technical-documentation/"> Technical Documentation </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/debugging/"> Debugging </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/updating-mapstructorg/"> Updating mapstruct.org </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/ide-build/"> Building MapStruct within an IDE </a>
+            </li>
+                    
+            <li>
+                <a href="https://mapstruct.github.io/mapstruct.org.new/development/license/"> License </a>
+            </li>
+                    
+                
+            
+        
+        </ul>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+            <hr/>
+            <div>© Gunnar Morling 2016</div>
+        </div>
+    </body>
+</html>
