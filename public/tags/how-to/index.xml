@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MapStruct</title>
-    <link>https://mapstruct.github.io/mapstruct.org.new/tags/how-to/index.xml</link>
+    <link>http://mapstruct.org/tags/how-to/index.xml</link>
     <description>Recent content on MapStruct</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://mapstruct.github.io/mapstruct.org.new/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mapstruct.org/tags/how-to/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using MapStruct with Gradle</title>
-      <link>https://mapstruct.github.io/mapstruct.org.new/news/2013-07-08-using-mapstruct-with-gradle/</link>
+      <link>http://mapstruct.org/news/2013-07-08-using-mapstruct-with-gradle/</link>
       <pubDate>Mon, 08 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mapstruct.github.io/mapstruct.org.new/news/2013-07-08-using-mapstruct-with-gradle/</guid>
+      <guid>http://mapstruct.org/news/2013-07-08-using-mapstruct-with-gradle/</guid>
       <description>
 
 &lt;p&gt;You work with &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; to build your application and would like to make use of MapStruct to generate mappings between different representations of your model? Then read on to learn how to make MapStruct work with the Groovy based build tool.&lt;/p&gt;
